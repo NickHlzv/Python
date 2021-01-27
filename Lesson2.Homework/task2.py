@@ -8,8 +8,6 @@ for el in range(1, count+1):
     lst_el = input(f'Введите {el}й элемент списка: ')
     lst.append(lst_el)
 print(lst)
-if count % 2 != 0:
-    count -= 1
-for i in range(0, count, 2):
+for i in range(0, count-1, 2):
     lst[i], lst[i+1] = lst[i+1], lst[i]
 print(lst)
