@@ -22,5 +22,5 @@ def pow2(x, y):
             return 1
 
 
-print(pow1(2, -3))
-print(pow2(2, -3))
+print(pow1(1.5, -3))
+print(pow2(1.5, -3))
