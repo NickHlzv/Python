@@ -1,5 +1,5 @@
 def my_func(word):
-    result = ''.join([letter[0].upper() + letter[1:] for letter in word.split()])
+    result = ''.join(word[0].upper() + word[1:])
     return result
 
 
