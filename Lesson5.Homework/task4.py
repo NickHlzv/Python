@@ -11,6 +11,3 @@ print(data)
 with open('file4.txt', 'w', encoding='utf-8') as f:
     for i in range(len(data)):
         f.writelines(data[i])
-
-
-
