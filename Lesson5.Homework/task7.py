@@ -15,3 +15,4 @@ with open('file7.txt', 'r', encoding='utf-8') as f:
     result = [firms, avg_dict]
 with open('data7.json', 'w', encoding='utf-8') as f:
     json.dump(result, f)
+print(result)
