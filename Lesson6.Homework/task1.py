@@ -5,12 +5,11 @@ class traffic_light:
     modes = ['Красный', 'Желтый', 'Зеленый']
     times = [7, 2, 5]
 
-    def __init__(self, _color='Красный'):
-        self._color = _color
+    def __init__(self, color='Красный'):
+        self.__color = color
 
     def running(self):
-        index = traffic_light.modes.index(self._color)
-        switch = ''
+        index = traffic_light.modes.index(self.__color)
         while True:
             print(traffic_light.modes[index])
             time.sleep(traffic_light.times[index])
@@ -24,5 +23,5 @@ class traffic_light:
             index += 1
 
 
-traffic = traffic_light('Зеленый')
+traffic = traffic_light()
 traffic.running()
