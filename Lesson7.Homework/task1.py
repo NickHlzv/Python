@@ -45,4 +45,3 @@ print(matrix2)
 matrix3 = matrix1 + matrix2
 print(matrix3)
 print(matrix2 + matrix1 + matrix3 + matrix1)
-
