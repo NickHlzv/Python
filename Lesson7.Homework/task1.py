@@ -12,8 +12,7 @@ class Matrix:
     def __str__(self):
         result = ''
         for lst in self.list_of_lists:
-            string = str(lst)
-            result += (string + '\n')
+            result += ''.join(str(lst) + '\n')
         return result
 
     def __add__(self, matrix):
