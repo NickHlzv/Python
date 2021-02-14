@@ -35,15 +35,14 @@ class Matrix:
                 matrix_string = [0 for i in range(sum_base_dimension)]
             new_string = [self_string[ind] + matrix_string[ind] for ind in range(sum_base_dimension)]
             result.append(new_string)
-        return result
+        return Matrix(result)
 
 
 matrix1 = Matrix([[1, 5, 6], [4, 2, 15], [5, 7, 1, 1]])
 print(matrix1)
-matrix2 = Matrix([[2], [0, 5, 6, 6, 7], [3, 0, 1], [2, 4, 8]])
+matrix2 = Matrix([[2], [0, 5, 6, 6, 7], [3, 0, 1], [2, 4, 8, 10]])
 print(matrix2)
-matrix3 = Matrix(matrix1 + matrix2)
+matrix3 = matrix1 + matrix2
 print(matrix3)
-print(matrix1)
-print(matrix2)
-print(Matrix(matrix1 + matrix3))
+print(matrix2 + matrix1 + matrix3 + matrix1)
+
